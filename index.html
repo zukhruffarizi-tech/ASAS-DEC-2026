@@ -8,23 +8,23 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body, html { 
             width: 100%; 
-            height: 100%; 
-            overflow: hidden; 
+            min-height: 100%; 
+            overflow-y: auto; /* Memungkinkan halaman digulir ke bawah jika kontennya panjang */
             background: radial-gradient(circle at center, #f0f7fc 0%, #e1f0fa 50%, #d3e7f5 100%);
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
         .iframe-container {
             width: 100%;
-            height: 100vh;
+            min-height: 100vh;
             border: none;
             position: relative;
         }
         iframe {
             width: 100%;
-            height: 100%;
+            height: 100vh;
+            min-height: 100%;
             border: none;
         }
-        /* Indikator loading ringan di GitHub Pages jika server Google sedang inisialisasi */
         .page-loader {
             position: absolute;
             top: 50%;
@@ -40,9 +40,8 @@
 <body>
 
 <div class="iframe-container">
-    <div class="page-loader">Sabar bang messi...</div>
-    <!-- loading="lazy" dihapus agar browser langsung memuat tanpa jeda -->
-    <iframe src="https://script.google.com/macros/s/AKfycbxrKQDuCOME8L9bmFLpOdZyFA2wBYqhfmkUN4oqlXnI5df3bdLxamEEXsmO-wniDKiT/exec" 
+    <div class="page-loader">Menghubungkan ke server...</div>
+    <iframe src="https://script.google.com/macros/s/AKfycbx6z9Ypsuk3NyLa2A7ZGdNEKjnSqpJHSCCOpShLU9wMmQdIbwzEGkh4iNOE4LjrV7aq/exec" 
             allow="fullscreen">
     </iframe>
 </div>
