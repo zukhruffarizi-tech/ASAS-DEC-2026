@@ -10,8 +10,10 @@
             width: 100%; 
             min-height: 100vh;
             height: auto;
-            overflow-y: auto; /* Mengizinkan scroll alami dari ujung ke ujung */
-            background: radial-gradient(circle at center, #f0f7fc 0%, #e1f0fa 50%, #d3e7f5 100%);
+            overflow-y: auto; 
+            /* Background disesuaikan menjadi nuansa abu-abu modern dengan aksen gradien biru elegan */
+            background: radial-gradient(circle at center, #cbd5e1 0%, #94a3b8 50%, #64748b 100%);
+            background-attachment: fixed;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
         .iframe-container {
@@ -24,7 +26,7 @@
         iframe {
             width: 100%;
             min-height: 100vh;
-            height: 100%; /* Menyesuaikan dengan konten di dalam Apps Script */
+            height: 100%;
             border: none;
             display: block;
         }
@@ -33,7 +35,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #64748b;
+            color: #f8fafc;
             font-size: 14px;
             font-style: italic;
             z-index: -1;
@@ -44,7 +46,7 @@
 
 <div class="iframe-container">
     <div class="page-loader">Menghubungkan ke server...</div>
-    <iframe src="https://script.google.com/macros/s/AKfycbwEpxYl0D196jJke3yVb7Fhh8WTXksd8c81hBX-vhqySbvQumUEpihbeMZGB-T2mjhI/exec" 
+    <iframe src="https://script.google.com/macros/s/AKfycby3_ubiNyLnJ75s5_OMwBLaPbbXA9l78FUgAMX0owjpLdNu4O0S4vvLCT5OM_ONeZLW/exec" 
             allow="fullscreen">
     </iframe>
 </div>
