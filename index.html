@@ -1,393 +1,379 @@
-<!DOCTYPE html>
+coba anda pasangkan: <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Informasi ASAS Desember 2026</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Informasi ASAS Desember 2026</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        
+        body { 
+            background: radial-gradient(circle at center, #d8e6fc 0%, #e5eff8 50%, #eef3f9 100%);
+            background-attachment: fixed;
+            margin: 0; 
+            padding: 15px 12px 60px 12px; 
+            color: #0f172a; 
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
 
-    <!-- WhatsApp & Social Media Preview Meta Tags (Large Thumbnail) -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Informasi ASAS Desember 2026">
-    <meta property="og:description" content="SDI-AS-SUNNAH@zkhrf.archive">
-    <meta property="og:image" content="https://zukhruffarizi-tech.github.io/ASAS-DEC-2026/1.1.%20SURAT%20PEMBERITAHUAN%20PEMBUATAN%20SOAL.png">
-    <meta property="og:url" content="https://zukhruffarizi-tech.github.io/ASAS-DEC-2026/">
+        .container { 
+            max-width: 950px; 
+            width: 100%; 
+            margin: 0 auto; 
+            position: relative;
+            z-index: 2; 
+        }
 
-    <!-- Format Thumbnail Ukuran Besar -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Informasi ASAS Desember 2026">
-    <meta name="twitter:description" content="SDI-AS-SUNNAH@zkhrf.archive">
-    <meta name="twitter:image" content="https://zukhruffarizi-tech.github.io/ASAS-DEC-2026/1.1.%20SURAT%20PEMBERITAHUAN%20PEMBUATAN%20SOAL.png">
+        /* Surat Pemberitahuan Sticky di Latar Belakang */
+        .announcement-card {
+            position: sticky;
+            top: 15px;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 
+                        inset 0 1px 1px 0 rgba(255, 255, 255, 0.9), 
+                        inset 0 -1px 2px 0 rgba(148, 163, 184, 0.2);
+            padding: 10px;
+            border: 3px solid rgba(255, 255, 255, 0.8);
+            margin-bottom: 25px;
+            width: 100%;
+        }
 
-    <style>
-        * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-        
-        body { 
-            background: radial-gradient(circle at center, #d8e6fc 0%, #e5eff8 50%, #eef3f9 100%);
-            background-attachment: fixed;
-            margin: 0; 
-            padding: 15px 12px 60px 12px; 
-            color: #0f172a; 
-            min-height: 100vh;
-            position: relative;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
+        .announcement-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+        }
 
-        .container { 
-            max-width: 950px; 
-            width: 100%; 
-            margin: 0 auto; 
-            position: relative;
-            z-index: 2; 
-        }
+        /* Wrapper Konten Checklist yang Berada di Lapisan Atas (Menutupi Surat saat Scroll) */
+        .content-wrapper {
+            position: relative;
+            z-index: 5;
+            background: rgba(229, 239, 248, 0.25);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 20px;
+            padding: 15px 10px 10px 10px;
+            margin-top: 10px;
+            box-shadow: 0 -10px 25px rgba(15, 23, 42, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        
+        .header-section {
+            text-align: left;
+            margin: 0 0 15px 0;
+            padding-left: 4px;
+        }
 
-        /* Surat Pemberitahuan Sticky di Latar Belakang */
-        .announcement-card {
-            position: sticky;
-            top: 15px;
-            z-index: 1;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
-            border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 
-                        inset 0 1px 1px 0 rgba(255, 255, 255, 0.9), 
-                        inset 0 -1px 2px 0 rgba(148, 163, 184, 0.2);
-            padding: 10px;
-            border: 3px solid rgba(255, 255, 255, 0.8);
-            margin-bottom: 25px;
-            width: 100%;
-        }
+        h2 { 
+            color: #0f172a; 
+            margin: 0 0 4px 0; 
+            font-size: 20px; 
+            font-weight: 800; 
+            letter-spacing: -0.5px;
+        }
 
-        .announcement-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            display: block;
-        }
+        .update-info {
+            font-size: 11px;
+            color: #475569;
+            font-weight: 600;
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
 
-        /* Wrapper Konten Checklist yang Berada di Lapisan Atas (Menutupi Surat saat Scroll) */
-        .content-wrapper {
-            position: relative;
-            z-index: 5;
-            background: rgba(229, 239, 248, 0.20);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border-radius: 20px;
-            padding: 15px 10px 10px 10px;
-            margin-top: 10px;
-            box-shadow: 0 -10px 25px rgba(15, 23, 42, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.6);
-        }
-        
-        .header-section {
-            text-align: left;
-            margin: 0 0 15px 0;
-            padding-left: 4px;
-        }
+        .author-tag {
+            color: #64748b;
+            font-weight: 500;
+        }
+        
+        .card-grid { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 14px; 
+            width: 100%;
+        }
+        
+        .card { 
+            background: rgba(255, 255, 255, 0.25); 
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border-radius: 18px; 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 
+                        inset 0 1px 1px 0 rgba(255, 255, 255, 0.9), 
+                        inset 0 -1px 2px 0 rgba(148, 163, 184, 0.2); 
+            padding: 14px; 
+            border: 3px solid rgba(2, 132, 199, 0.15); 
+            width: 100%;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.05); 
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+            gap: 10px;
+        }
 
-        h2 { 
-            color: #0f172a; 
-            margin: 0 0 4px 0; 
-            font-size: 20px; 
-            font-weight: 800; 
-            letter-spacing: -0.5px;
-        }
+        .card-title { 
+            font-size: 16px; 
+            font-weight: 800; 
+            color: #0f172a; 
+        }
 
-        .update-info {
-            font-size: 11px;
-            color: #475569;
-            font-weight: 600;
-            display: flex;
-            gap: 6px;
-            align-items: center;
-        }
+        .sections-wrapper {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+        }
 
-        .author-tag {
-            color: #64748b;
-            font-weight: 500;
-        }
-        
-        .card-grid { 
-            display: flex; 
-            flex-direction: column; 
-            gap: 14px; 
-            width: 100%;
-        }
-        
-        .card { 
-            background: rgba(255, 255, 255, 0.10); /* Transparansi kartu disesuaikan ke 10% agar lebih bening */
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
-            border-radius: 18px; 
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 
-                        inset 0 1px 1px 0 rgba(255, 255, 255, 0.9), 
-                        inset 0 -1px 2px 0 rgba(148, 163, 184, 0.2); 
-            padding: 14px; 
-            border: 3px solid rgba(2, 132, 199, 0.15); 
-            width: 100%;
-        }
-        
-        .card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid rgba(0, 0, 0, 0.05); 
-            padding-bottom: 8px;
-            margin-bottom: 10px;
-            gap: 10px;
-        }
+        .section-box {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-width: 0;
+        }
 
-        .card-title { 
-            font-size: 16px; 
-            font-weight: 800; 
-            color: #0f172a; 
-        }
+        .section-title {
+            font-size: 9.5px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.2px;
+            margin-bottom: 2px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .title-dien { color: #0f766e; }
+        .title-umum { color: #0284c7; }
+        
+        .card-item { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 6px 8px;
+            background: rgba(255, 255, 255, 0.85); 
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            border-radius: 10px;
+            border: 1px solid rgba(2, 132, 199, 0.5); 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02), 
+                        inset 0 1px 1px rgba(255, 255, 255, 0.9);
+            gap: 4px;
+        }
+        
+        .label { 
+            font-weight: 700; 
+            color: #1e293b; 
+            font-size: 10px; 
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        .status-pill {
+            padding: 3px 6px;
+            border-radius: 12px;
+            font-size: 8.5px;
+            font-weight: 700;
+            text-align: center;
+            white-space: nowrap;
+        }
+        
+        .status-hijau { background-color: rgba(209, 250, 229, 0.85); color: #065f46; border: 1px solid rgba(52, 211, 153, 0.6); box-shadow: inset 0 1px 1px rgba(255,255,255,0.7); }
+        .status-merah { background-color: rgba(254, 226, 226, 0.85); color: #991b1b; border: 1px solid rgba(248, 113, 113, 0.6); box-shadow: inset 0 1px 1px rgba(255,255,255,0.7); }
+        .status-abu { background-color: rgba(241, 245, 249, 0.85); color: #475569; border: 1px solid rgba(203, 213, 225, 0.6); box-shadow: inset 0 1px 1px rgba(255,255,255,0.7); font-style: italic; }
 
-        .sections-wrapper {
-            display: flex;
-            flex-direction: row;
-            gap: 8px;
-        }
-
-        .section-box {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            min-width: 0;
-        }
-
-        .section-title {
-            font-size: 9.5px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.2px;
-            margin-bottom: 2px;
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .title-dien { color: #0f766e; }
-        .title-umum { color: #0284c7; }
-        
-        .card-item { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            padding: 6px 8px;
-            background: rgba(255, 255, 255, 0.50); /* Disesuaikan ke 50% agar lebih selaras dengan latar kartu */
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
-            border-radius: 10px;
-            border: 1px solid rgba(2, 132, 199, 0.5); 
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02), 
-                        inset 0 1px 1px rgba(255, 255, 255, 0.9);
-            gap: 4px;
-        }
-        
-        .label { 
-            font-weight: 700; 
-            color: #1e293b; 
-            font-size: 10px; 
-            flex: 1;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        
-        .status-pill {
-            padding: 3px 6px;
-            border-radius: 12px;
-            font-size: 8.5px;
-            font-weight: 700;
-            text-align: center;
-            white-space: nowrap;
-        }
-        
-        .status-hijau { background-color: rgba(209, 250, 229, 0.85); color: #065f46; border: 1px solid rgba(52, 211, 153, 0.6); box-shadow: inset 0 1px 1px rgba(255,255,255,0.7); }
-        .status-merah { background-color: rgba(254, 226, 226, 0.85); color: #991b1b; border: 1px solid rgba(248, 113, 113, 0.6); box-shadow: inset 0 1px 1px rgba(255,255,255,0.7); }
-        .status-abu { background-color: rgba(241, 245, 249, 0.85); color: #475569; border: 1px solid rgba(203, 213, 225, 0.6); box-shadow: inset 0 1px 1px rgba(255,255,255,0.7); font-style: italic; }
-
-        .loading { text-align: center; padding: 40px; font-style: italic; color: #0f172a; font-size: 14px; font-weight: 600; }
-    </style>
+        .loading { text-align: center; padding: 40px; font-style: italic; color: #0f172a; font-size: 14px; font-weight: 600; }
+    </style>
 </head>
 <body>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Ambil data langsung dari Google Apps Script Web App dengan parameter ?action=json
-        fetch('https://script.google.com/macros/s/AKfycbwkkVz4PeJoaIthe2SV04I3V7jXYSil74lHsEYH_7B_5ItBc9s6qhyGzjT1FsTbuSgD/exec?action=json')
-            .then(response => response.json())
-            .then(data => {
-                renderCards(data);
-            })
-            .catch(err => {
-                renderError(err);
-            });
-    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Ambil data langsung dari Google Apps Script Web App dengan parameter ?action=json
+        fetch('https://script.google.com/macros/s/AKfycbwkkVz4PeJoaIthe2SV04I3V7jXYSil74lHsEYH_7B_5ItBc9s6qhyGzjT1FsTbuSgD/exec?action=json')
+            .then(response => response.json())
+            .then(data => {
+                renderCards(data);
+            })
+            .catch(err => {
+                renderError(err);
+            });
+    });
 
-    function renderCards(response) {
-        document.getElementById('loading').style.display = 'none';
-        
-        var now = new Date();
-        var optionsDate = { year: 'numeric', month: 'short', day: 'numeric' };
-        var optionsTime = { hour: '2-digit', minute: '2-digit', hour12: false };
-        var dateStr = now.toLocaleDateString('id-ID', optionsDate);
-        var timeStr = now.toLocaleTimeString('id-ID', optionsTime) + ' WIB';
-        
-        document.getElementById('updateInfo').innerHTML = 'Update: ' + dateStr + ', ' + timeStr + ' <span class="author-tag">| © zkhrf</span>';
+    function renderCards(response) {
+        document.getElementById('loading').style.display = 'none';
+        
+        var now = new Date();
+        var optionsDate = { year: 'numeric', month: 'short', day: 'numeric' };
+        var optionsTime = { hour: '2-digit', minute: '2-digit', hour12: false };
+        var dateStr = now.toLocaleDateString('id-ID', optionsDate);
+        var timeStr = now.toLocaleTimeString('id-ID', optionsTime) + ' WIB';
+        
+        document.getElementById('updateInfo').innerHTML = 'Update: ' + dateStr + ', ' + timeStr + ' <span class="author-tag">| © zkhrf</span>';
 
-        var rows = response;
-        var gridContainer = document.getElementById('cardGrid');
-        
-        if (!rows || rows.length === 0) {
-            gridContainer.innerHTML = '<p style="text-align: left; width: 100%; color: #0f172a; font-weight:600;">Tidak ada data ditemukan.</p>';
-            return;
-        }
+        var rows = response;
+        var gridContainer = document.getElementById('cardGrid');
+        
+        if (!rows || rows.length === 0) {
+            gridContainer.innerHTML = '<p style="text-align: left; width: 100%; color: #0f172a; font-weight:600;">Tidak ada data ditemukan.</p>';
+            return;
+        }
 
-        let kelasMap = {};
-        let currentMapelType = ''; 
-        let headersDien = [];
-        let headersUmum = [];
+        let kelasMap = {};
+        let currentMapelType = ''; 
+        let headersDien = [];
+        let headersUmum = [];
 
-        for (var i = 0; i < rows.length; i++) {
-            var row = rows[i];
-            if (!row || row.length === 0) continue;
+        for (var i = 0; i < rows.length; i++) {
+            var row = rows[i];
+            if (!row || row.length === 0) continue;
 
-            var col0 = row[0] ? row[0].toString().trim() : '';
+            var col0 = row[0] ? row[0].toString().trim() : '';
 
-            if (col0.toLowerCase() === 'no' || col0 === 'No.') {
-                let hasTauhid = row.includes('Tauhid');
-                if (hasTauhid) {
-                    currentMapelType = 'DIEN';
-                    headersDien = row;
-                } else {
-                    currentMapelType = 'UMUM';
-                    headersUmum = row;
-                }
-                continue;
-            }
+            if (col0.toLowerCase() === 'no' || col0 === 'No.') {
+                let hasTauhid = row.includes('Tauhid');
+                if (hasTauhid) {
+                    currentMapelType = 'DIEN';
+                    headersDien = row;
+                } else {
+                    currentMapelType = 'UMUM';
+                    headersUmum = row;
+                }
+                continue;
+            }
 
-            var kelasVal = row[2] ? row[2].toString().trim() : '';
-            if (!kelasVal || !kelasVal.toLowerCase().startsWith('kelas')) continue;
+            var kelasVal = row[2] ? row[2].toString().trim() : '';
+            if (!kelasVal || !kelasVal.toLowerCase().startsWith('kelas')) continue;
 
-            if (!kelasMap[kelasVal]) {
-                kelasMap[kelasVal] = { dienRow: null, umumRow: null, dienHeaders: [], umumHeaders: [] };
-            }
+            if (!kelasMap[kelasVal]) {
+                kelasMap[kelasVal] = { dienRow: null, umumRow: null, dienHeaders: [], umumHeaders: [] };
+            }
 
-            if (currentMapelType === 'DIEN') {
-                kelasMap[kelasVal].dienRow = row;
-                kelasMap[kelasVal].dienHeaders = headersDien;
-            } else if (currentMapelType === 'UMUM') {
-                kelasMap[kelasVal].umumRow = row;
-                kelasMap[kelasVal].umumHeaders = headersUmum;
-            }
-        }
+            if (currentMapelType === 'DIEN') {
+                kelasMap[kelasVal].dienRow = row;
+                kelasMap[kelasVal].dienHeaders = headersDien;
+            } else if (currentMapelType === 'UMUM') {
+                kelasMap[kelasVal].umumRow = row;
+                kelasMap[kelasVal].umumHeaders = headersUmum;
+            }
+        }
 
-        var html = '';
+        var html = '';
 
-        for (var kelas in kelasMap) {
-            html += '<div class="card">';
-            
-            html += '<div class="card-header">';
-            html += '<div class="card-title">' + kelas + '</div>';
-            html += '</div>';
+        for (var kelas in kelasMap) {
+            html += '<div class="card">';
+            
+            html += '<div class="card-header">';
+            html += '<div class="card-title">' + kelas + '</div>';
+            html += '</div>';
 
-            html += '<div class="sections-wrapper">';
+            html += '<div class="sections-wrapper">';
 
-            // DIEN
-            html += '<div class="section-box">';
-            html += '<div class="section-title title-dien">📚 Mapel DIEN</div>';
-            var dienData = kelasMap[kelas].dienRow;
-            var dienHeaders = kelasMap[kelas].dienHeaders;
-            
-            if (dienData && dienHeaders.length > 0) {
-                for (var j = 3; j < dienHeaders.length; j++) {
-                    var labelName = dienHeaders[j] ? dienHeaders[j].toString().trim() : '';
-                    if (!labelName) continue;
-                    var valueText = (dienData[j] !== undefined && dienData[j] !== null) ? dienData[j].toString().trim() : 'Belum';
-                    html += buildItemHtml(labelName, valueText);
-                }
-            } else {
-                html += '<p style="font-size:10px; color:#64748b; font-style:italic;">Belum ada.</p>';
-            }
-            html += '</div>'; 
+            // DIEN
+            html += '<div class="section-box">';
+            html += '<div class="section-title title-dien">📚 Mapel DIEN</div>';
+            var dienData = kelasMap[kelas].dienRow;
+            var dienHeaders = kelasMap[kelas].dienHeaders;
+            
+            if (dienData && dienHeaders.length > 0) {
+                for (var j = 3; j < dienHeaders.length; j++) {
+                    var labelName = dienHeaders[j] ? dienHeaders[j].toString().trim() : '';
+                    if (!labelName) continue;
+                    var valueText = (dienData[j] !== undefined && dienData[j] !== null) ? dienData[j].toString().trim() : 'Belum';
+                    html += buildItemHtml(labelName, valueText);
+                }
+            } else {
+                html += '<p style="font-size:10px; color:#64748b; font-style:italic;">Belum ada.</p>';
+            }
+            html += '</div>'; 
 
-            // UMUM
-            html += '<div class="section-box">';
-            html += '<div class="section-title title-umum">📖 Mapel UMUM</div>';
-            var umumData = kelasMap[kelas].umumRow;
-            var umumHeaders = kelasMap[kelas].umumHeaders;
+            // UMUM
+            html += '<div class="section-box">';
+            html += '<div class="section-title title-umum">📖 Mapel UMUM</div>';
+            var umumData = kelasMap[kelas].umumRow;
+            var umumHeaders = kelasMap[kelas].umumHeaders;
 
-            if (umumData && umumHeaders.length > 0) {
-                for (var k = 3; k < umumHeaders.length; k++) {
-                    var labelNameUmum = umumHeaders[k] ? umumHeaders[k].toString().trim() : '';
-                    if (!labelNameUmum) continue;
-                    var valueTextUmum = (umumData[k] !== undefined && umumData[k] !== null) ? umumData[k].toString().trim() : 'Belum';
-                    html += buildItemHtml(labelNameUmum, valueTextUmum);
-                }
-            } else {
-                html += '<p style="font-size:10px; color:#64748b; font-style:italic;">Belum ada.</p>';
-            }
-            html += '</div>'; 
+            if (umumData && umumHeaders.length > 0) {
+                for (var k = 3; k < umumHeaders.length; k++) {
+                    var labelNameUmum = umumHeaders[k] ? umumHeaders[k].toString().trim() : '';
+                    if (!labelNameUmum) continue;
+                    var valueTextUmum = (umumData[k] !== undefined && umumData[k] !== null) ? umumData[k].toString().trim() : 'Belum';
+                    html += buildItemHtml(labelNameUmum, valueTextUmum);
+                }
+            } else {
+                html += '<p style="font-size:10px; color:#64748b; font-style:italic;">Belum ada.</p>';
+            }
+            html += '</div>'; 
 
-            html += '</div>'; 
-            html += '</div>'; 
-        }
-        
-        gridContainer.innerHTML = html !== '' ? html : '<p style="text-align: left; width: 100%; color: #0f172a; font-weight:600;">Tidak ada data valid.</p>';
-    }
+            html += '</div>'; 
+            html += '</div>'; 
+        }
+        
+        gridContainer.innerHTML = html !== '' ? html : '<p style="text-align: left; width: 100%; color: #0f172a; font-weight:600;">Tidak ada data valid.</p>';
+    }
 
-    function buildItemHtml(label, value) {
-        var pillClass = 'status-abu';
-        var valLower = String(value).toLowerCase();
-        
-        if (valLower.includes('belum')) {
-            pillClass = 'status-merah';
-        } else if (valLower.includes('tidak ada mapel') || valLower === '') {
-            pillClass = 'status-abu';
-            value = 'Tidak Ada Mapel';
-        } else if (valLower.includes('sudah')) {
-            pillClass = 'status-hijau';
-        } else {
-            pillClass = 'status-hijau';
-        }
+    function buildItemHtml(label, value) {
+        var pillClass = 'status-abu';
+        var valLower = String(value).toLowerCase();
+        
+        if (valLower.includes('belum')) {
+            pillClass = 'status-merah';
+        } else if (valLower.includes('tidak ada mapel') || valLower === '') {
+            pillClass = 'status-abu';
+            value = 'Tidak Ada Mapel';
+        } else if (valLower.includes('sudah')) {
+            pillClass = 'status-hijau';
+        } else {
+            pillClass = 'status-hijau';
+        }
 
-        var itemHtml = '<div class="card-item">';
-        itemHtml += '<span class="label" title="' + label + '">' + label + '</span>';
-        itemHtml += '<span class="status-pill ' + pillClass + '">' + value + '</span>';
-        itemHtml += '</div>';
-        return itemHtml;
-    }
+        var itemHtml = '<div class="card-item">';
+        itemHtml += '<span class="label" title="' + label + '">' + label + '</span>';
+        itemHtml += '<span class="status-pill ' + pillClass + '">' + value + '</span>';
+        itemHtml += '</div>';
+        return itemHtml;
+    }
 
-    function renderError(err) {
-        document.getElementById('loading').innerHTML = '<span style="color: #b91c1c; font-weight:600;">Gagal memuat data: ' + err.message + '</span>';
-    }
+    function renderError(err) {
+        document.getElementById('loading').innerHTML = '<span style="color: #b91c1c; font-weight:600;">Gagal memuat data: ' + err.message + '</span>';
+    }
 </script>
 
 <div class="container">
-    <!-- Gambar Surat Pemberitahuan Paling Atas (Sticky di Belakang) -->
-    <div class="announcement-card">
-        <img src="1.1. SURAT PEMBERITAHUAN PEMBUATAN SOAL_1.png" alt="Surat Pemberitahuan ASAS DEC-26">
-    </div>
+    <!-- Gambar Surat Pemberitahuan Paling Atas (Sticky di Belakang) -->
+    <div class="announcement-card">
+        <img src="1.1. SURAT PEMBERITAHUAN PEMBUATAN SOAL_1.png" alt="Surat Pemberitahuan ASAS DEC-26">
+    </div>
 
-    <!-- Wrapper Konten Utama (Judul + Checklist) yang Akan Naik Menutupi Surat Saat Scroll -->
-    <div class="content-wrapper">
-        <div class="header-section">
-            <h2>Checklist Pengumpulan Soal ASAS DEC-26</h2>
-            <div id="updateInfo" class="update-info">
-                <span>Update: Updating...</span>
-                <span class="author-tag">| © zkhrf</span>
-            </div>
-        </div>
+    <!-- Wrapper Konten Utama (Judul + Checklist) yang Akan Naik Menutupi Surat Saat Scroll -->
+    <div class="content-wrapper">
+        <div class="header-section">
+            <h2>Checklist Pengumpulan Soal ASAS DEC-26</h2>
+            <div id="updateInfo" class="update-info">
+                <span>Update: Updating...</span>
+                <span class="author-tag">| © zkhrf</span>
+            </div>
+        </div>
 
-        <div id="loading" class="loading">Sabar bang...</div>
-        <div id="cardGrid" class="card-grid"></div>
-    </div>
+        <div id="loading" class="loading">Sabar bang...</div>
+        <div id="cardGrid" class="card-grid"></div>
+    </div>
 </div>
 
 </body>
