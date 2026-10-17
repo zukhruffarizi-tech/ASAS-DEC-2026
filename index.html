@@ -59,9 +59,12 @@
             z-index: 2; 
         }
 
-        /* Gaya Kartu Gambar Pengumuman / Surat Pemberitahuan */
+        /* Surat Pemberitahuan Sticky di Latar Belakang */
         .announcement-card {
-            background: rgba(255, 255, 255, 0.08);
+            position: sticky;
+            top: 15px;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(4px);
             -webkit-backdrop-filter: blur(4px);
             border-radius: 18px;
@@ -70,7 +73,7 @@
                         inset 0 -1px 2px 0 rgba(148, 163, 184, 0.2);
             padding: 10px;
             border: 3px solid rgba(255, 255, 255, 0.8);
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             width: 100%;
         }
 
@@ -80,10 +83,24 @@
             border-radius: 12px;
             display: block;
         }
+
+        /* Wrapper Konten Checklist yang Berada di Lapisan Atas (Menutupi Surat saat Scroll) */
+        .content-wrapper {
+            position: relative;
+            z-index: 5;
+            background: rgba(229, 239, 248, 0.82);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 15px 10px 10px 10px;
+            margin-top: 10px;
+            box-shadow: 0 -10px 25px rgba(15, 23, 42, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
         
         .header-section {
             text-align: left;
-            margin: 10px 0 20px 0;
+            margin: 0 0 15px 0;
             padding-left: 4px;
         }
 
@@ -117,15 +134,15 @@
         }
         
         .card { 
-            background: rgba(255, 255, 255, 0.08); 
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
+            background: rgba(255, 255, 255, 0.45); 
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
             border-radius: 18px; 
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 
                         inset 0 1px 1px 0 rgba(255, 255, 255, 0.9), 
                         inset 0 -1px 2px 0 rgba(148, 163, 184, 0.2); 
             padding: 14px; 
-            border: 3px solid rgba(255, 255, 255, 0.8); 
+            border: 3px solid rgba(255, 255, 255, 0.85); 
             width: 100%;
         }
         
@@ -180,11 +197,11 @@
             justify-content: space-between; 
             align-items: center; 
             padding: 6px 8px;
-            background: rgba(255, 255, 255, 0.5); 
+            background: rgba(255, 255, 255, 0.65); 
             backdrop-filter: blur(4px);
             -webkit-backdrop-filter: blur(4px);
             border-radius: 10px;
-            border: 1px solid rgba(255, 255, 255, 0.7); 
+            border: 1px solid rgba(255, 255, 255, 0.8); 
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02), 
                         inset 0 1px 1px rgba(255, 255, 255, 0.9);
             gap: 4px;
@@ -386,22 +403,24 @@
 </script>
 
 <div class="container">
-    <!-- Gambar Surat Pemberitahuan Paling Atas (Mengambil file surat.jpg langsung dari GitHub) -->
+    <!-- Gambar Surat Pemberitahuan Paling Atas (Sticky di Belakang) -->
     <div class="announcement-card">
         <img src="1.1. SURAT PEMBERITAHUAN PEMBUATAN SOAL_1.png" alt="Surat Pemberitahuan ASAS DEC-26">
     </div>
 
-    <!-- Header Section di Bawah Gambar Surat -->
-    <div class="header-section">
-        <h2>Checklist Pengumpulan Soal ASAS DEC-26</h2>
-        <div id="updateInfo" class="update-info">
-            <span>Update: Updating...</span>
-            <span class="author-tag">| © zkhrf</span>
+    <!-- Wrapper Konten Utama (Judul + Checklist) yang Akan Naik Menutupi Surat Saat Scroll -->
+    <div class="content-wrapper">
+        <div class="header-section">
+            <h2>Checklist Pengumpulan Soal ASAS DEC-26</h2>
+            <div id="updateInfo" class="update-info">
+                <span>Update: Updating...</span>
+                <span class="author-tag">| © zkhrf</span>
+            </div>
         </div>
-    </div>
 
-    <div id="loading" class="loading">Sabar bang...</div>
-    <div id="cardGrid" class="card-grid"></div>
+        <div id="loading" class="loading">Sabar bang...</div>
+        <div id="cardGrid" class="card-grid"></div>
+    </div>
 </div>
 
 </body>
