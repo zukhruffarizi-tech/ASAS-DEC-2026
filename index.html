@@ -5,79 +5,33 @@
     <title>Informasi ASAS Desember 2026</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <!-- Meta Tag Open Graph & Twitter Card untuk Preview WhatsApp (Thumbnail Besar) -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Zkhrf@sdia.archive">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Zkhrf@sdia.archive">
-   
     <style>
         * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
         
         body { 
-            background: radial-gradient(circle at center, #d8e6fc 0%, #e5eff8 50%, #eef3f9 100%);
-            background-attachment: fixed;
+            background: #eef3f9;
             margin: 0; 
             padding: 15px 12px 60px 12px; 
             color: #0f172a; 
             min-height: 100vh;
-            position: relative;
-            overflow-x: hidden;
-            overflow-y: auto;
         }
 
         .container { 
             max-width: 950px; 
             width: 100%; 
             margin: 0 auto; 
-            position: relative;
-            z-index: 2; 
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
-        /* Surat Pemberitahuan Sticky di Latar Belakang */
-        .announcement-card {
-            position: sticky;
-            top: 15px;
-            z-index: 1;
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
-            border-radius: 18px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 
-                        inset 0 1px 1px 0 rgba(255, 255, 255, 0.9), 
-                        inset 0 -1px 2px 0 rgba(148, 163, 184, 0.2);
-            padding: 10px;
-            border: 3px solid rgba(255, 255, 255, 0.8);
-            margin-bottom: 25px;
-            width: 100%;
-        }
-
-        .announcement-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            display: block;
-        }
-
-        /* Wrapper Konten Checklist yang Berada di Lapisan Atas (Menutupi Surat saat Scroll) */
-        .content-wrapper {
-            position: relative;
-            z-index: 5;
-            background: rgba(229, 239, 248, 0.20);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            border-radius: 20px;
-            padding: 15px 10px 10px 10px;
-            margin-top: 10px;
-            box-shadow: 0 -10px 25px rgba(15, 23, 42, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.6);
-        }
-        
+        /* Bagian Header / Judul */
         .header-section {
-            text-align: left;
-            margin: 0 0 15px 0;
-            padding-left: 4px;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(2, 132, 199, 0.15);
         }
 
         h2 { 
@@ -101,6 +55,23 @@
             color: #64748b;
             font-weight: 500;
         }
+
+        /* Gambar Surat (Normal Scroll) */
+        .announcement-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(2, 132, 199, 0.15);
+            width: 100%;
+        }
+
+        .announcement-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+        }
         
         .card-grid { 
             display: flex; 
@@ -110,15 +81,11 @@
         }
         
         .card { 
-            background: rgba(255, 255, 255, 0.10); /* Dibuat lebih transparan (10%) */
-            backdrop-filter: blur(6px);
-            -webkit-backdrop-filter: blur(6px);
-            border-radius: 18px; 
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 
-                        inset 0 1px 1px 0 rgba(255, 255, 255, 0.9), 
-                        inset 0 -1px 2px 0 rgba(148, 163, 184, 0.2); 
+            background: #ffffff; 
+            border-radius: 16px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03); 
             padding: 14px; 
-            border: 3px solid rgba(2, 132, 199, 0.15); 
+            border: 2px solid rgba(2, 132, 199, 0.15); 
             width: 100%;
         }
         
@@ -126,7 +93,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid rgba(0, 0, 0, 0.05); 
+            border-bottom: 2px solid #f1f5f9; 
             padding-bottom: 8px;
             margin-bottom: 10px;
             gap: 10px;
@@ -173,13 +140,9 @@
             justify-content: space-between; 
             align-items: center; 
             padding: 6px 8px;
-            background: rgba(255, 255, 255, 0.85); 
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
-            border-radius: 10px;
-            border: 1px solid rgba(2, 132, 199, 0.5); 
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02), 
-                        inset 0 1px 1px rgba(255, 255, 255, 0.9);
+            background: #f8fafc; 
+            border-radius: 8px;
+            border: 1px solid #e2e8f0; 
             gap: 4px;
         }
         
@@ -195,16 +158,16 @@
         
         .status-pill {
             padding: 3px 6px;
-            border-radius: 12px;
+            border-radius: 10px;
             font-size: 8.5px;
             font-weight: 700;
             text-align: center;
             white-space: nowrap;
         }
         
-        .status-hijau { background-color: rgba(209, 250, 229, 0.85); color: #065f46; border: 1px solid rgba(52, 211, 153, 0.6); box-shadow: inset 0 1px 1px rgba(255,255,255,0.7); }
-        .status-merah { background-color: rgba(254, 226, 226, 0.85); color: #991b1b; border: 1px solid rgba(248, 113, 113, 0.6); box-shadow: inset 0 1px 1px rgba(255,255,255,0.7); }
-        .status-abu { background-color: rgba(241, 245, 249, 0.85); color: #475569; border: 1px solid rgba(203, 213, 225, 0.6); box-shadow: inset 0 1px 1px rgba(255,255,255,0.7); font-style: italic; }
+        .status-hijau { background-color: #d1fae5; color: #065f46; border: 1px solid #34d399; }
+        .status-merah { background-color: #fee2e2; color: #991b1b; border: 1px solid #f87171; }
+        .status-abu { background-color: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; font-style: italic; }
 
         .loading { text-align: center; padding: 40px; font-style: italic; color: #0f172a; font-size: 14px; font-weight: 600; }
     </style>
@@ -364,21 +327,22 @@
 </script>
 
 <div class="container">
-    <!-- Gambar Surat Pemberitahuan Paling Atas (Sticky di Belakang) -->
-    <div class="announcement-card">
-        <img src="1.1. SURAT PEMBERITAHUAN PEMBUATAN SOAL_1.png" alt="Surat Pemberitahuan ASAS DEC-26">
+    <!-- Header Judul -->
+    <div class="header-section">
+        <h2>Checklist Pengumpulan Soal ASAS DEC-26</h2>
+        <div id="updateInfo" class="update-info">
+            <span>Update: Updating...</span>
+            <span class="author-tag">| © zkhrf</span>
+        </div>
     </div>
 
-    <!-- Wrapper Konten Utama (Judul + Checklist) yang Akan Naik Menutupi Surat Saat Scroll -->
-    <div class="content-wrapper">
-        <div class="header-section">
-            <h2>Checklist Pengumpulan Soal ASAS DEC-26</h2>
-            <div id="updateInfo" class="update-info">
-                <span>Update: Updating...</span>
-                <span class="author-tag">| © zkhrf</span>
-            </div>
-        </div>
+    <!-- Gambar Surat Pemberitahuan (Normal Scroll) -->
+    <div class="announcement-card">
+        <img src="1.1. SURAT PEMBERITAHUAN PEMBUATAN SOAL.png" alt="Surat Pemberitahuan ASAS DEC-26">
+    </div>
 
+    <!-- Daftar Kartu Checklist Utama -->
+    <div style="display: flex; flex-direction: column; gap: 10px;">
         <div id="loading" class="loading">Sabar bang...</div>
         <div id="cardGrid" class="card-grid"></div>
     </div>
