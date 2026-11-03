@@ -31,13 +31,37 @@
             z-index: 2;
         }
 
+        /* Kaca bening: hanya latar di belakang kartu yang diburamkan. */
+        .announcement-card,
+        .card {
+            background: linear-gradient(
+                135deg,
+                rgba(255, 255, 255, 0.34),
+                rgba(255, 255, 255, 0.12)
+            );
+            border: 1px solid rgba(255, 255, 255, 0.72);
+
+            -webkit-backdrop-filter: blur(5px) saturate(140%);
+            backdrop-filter: blur(5px) saturate(140%);
+
+            box-shadow:
+                0 8px 28px rgba(15, 23, 42, 0.05),
+                inset 0 1px 0 rgba(255, 255, 255, 0.85);
+        }
+
+        /* Tampilan cadangan jika browser belum mendukung backdrop-filter. */
+        @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+            .announcement-card,
+            .card {
+                background: rgba(255, 255, 255, 0.88);
+            }
+        }
+
         /* Surat tetap dalam alur halaman, tidak menempel saat scroll. */
         .announcement-card {
             position: static;
-            background: #ffffff;
             border-radius: 18px;
             padding: 10px;
-            border: 3px solid rgba(255, 255, 255, 0.8);
             margin-bottom: 20px;
             width: 100%;
         }
@@ -52,10 +76,10 @@
             display: block;
         }
 
-        /* Checklist solid dan berada di bawah surat. */
+        /* Transparan agar daun tidak tertutup panel. */
         .checklist-panel {
             position: relative;
-            background: #f1f1f1;
+            background: transparent;
             border-radius: 22px 22px 0 0;
             padding: 16px 0 0;
         }
@@ -96,10 +120,8 @@
         }
 
         .card {
-            background: #ffffff;
             border-radius: 18px;
             padding: 14px;
-            border: 3px solid rgba(255, 255, 255, 0.8);
             width: 100%;
         }
 
@@ -160,7 +182,10 @@
             justify-content: space-between;
             align-items: center;
             padding: 6px 8px;
-            background: #f8fafc;
+
+            /* Tetap transparan agar efek kaca terlihat. */
+            background: rgba(248, 250, 252, 0.28);
+
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.7);
             gap: 4px;
@@ -213,11 +238,15 @@
             font-weight: 600;
         }
 
-        /* Daun mapel: sedikit, perlahan, dan tidak menghalangi klik. */
+        /*
+         * Daun berada di belakang konten.
+         * Di luar kartu terlihat tajam.
+         * Di belakang kartu diburamkan oleh backdrop-filter.
+         */
         .maple-fall {
             position: fixed;
             inset: 0;
-            z-index: 3;
+            z-index: 1;
             pointer-events: none;
             overflow: hidden;
         }
@@ -253,7 +282,7 @@
             }
 
             10% {
-                opacity: 0.22;
+                opacity: 0.5;
             }
 
             50% {
@@ -261,7 +290,7 @@
             }
 
             90% {
-                opacity: 0.22;
+                opacity: 0.5;
             }
 
             100% {
@@ -292,7 +321,7 @@
 
 <body>
 
-    <!-- Efek daun mapel jatuh. -->
+    <!-- Efek daun mapel jatuh di belakang kartu. -->
     <div class="maple-fall" aria-hidden="true" inert>
         <svg
             class="maple-definitions"
@@ -579,7 +608,7 @@
             >
         </div>
 
-        <!-- Checklist solid di bawah surat. -->
+        <!-- Checklist dengan kartu kaca di bawah surat. -->
         <div class="checklist-panel">
             <div class="header-section">
                 <h2>Checklist Pengumpulan Soal ASAS DEC-26</h2>
